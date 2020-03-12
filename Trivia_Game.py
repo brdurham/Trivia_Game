@@ -19,6 +19,19 @@ TITLE_FONT = ("Times New Roman", "24")
 BUTTON_FONT = ("Arial", "15")
 
 
+
+
+
+class Screen(tk.Frame):    
+    current = 0
+   
+    def __init__(self):
+        tk.Frame.__init__(self)
+       
+    def switch_frame():
+        screens[Screen.current].tkraise()
+
+
 class MainMenu(tk.Frame):
 
     def __init__(self):
@@ -254,12 +267,23 @@ class MainMenu(tk.Frame):
         
 
 class History(tk.Frame):
-
     def __init__(self):
         tk.Frame.__init__(self) 
         
         
         
+class History_100(Screen):
+    def __init__(self):
+        Screen.__init__(self)
+        self.edit_key = 0        
+        
+        
+def go_question_100(self):
+    Screen.current = 0
+    Screen.switch_frame()     
+
+
+    
 
 
 
@@ -282,12 +306,14 @@ if __name__ == "__main__":
         root.title("Game_Lib")
 
         root.geometry("1000x275")
+        
+        screen = Screen()
+        screen.grid(row = 0, column = 0,
+                        sticky = "news")        
 
         main_menu = MainMenu()
-
         main_menu.grid(row = 0, column = 0,
-
-                               sticky = "news")            
+                        sticky = "news")            
 
         root.grid_columnconfigure(0, weight = 1)     
 

@@ -6,7 +6,7 @@ import pickle
 
 #History
 
-questions = { 1: ['In 1927, who became the first man to fly solo and non-stop across the Atlantic?','Charles Lindbergh', 'charles lindbergh', 'CHARLES LINDBURGH', ' Charles lindburgh'],
+questions = { 1: 'In 1927, who became the first man to fly solo and non-stop across the Atlantic?': {'Charles Lindbergh': 1, 'charles lindbergh': 2, 'CHARLES LINDBURGH': 3, ' Charles lindburgh': 4},
 2: ['What was the family name of the Russian rulers from the 17th century until the 1917 revolution?','Romanov', 'romanov', 'ROMANOV', 'Good ol Romanov'],
 3: ['Which was the first bridge to be built across the River Thames in London?','London Bridge', 'london bridge', 'LONDON BRIDGE', 'London bridge'],
 4:  ['Which U.S. president had a home called The Hermitage?','Andrew Jackson', 'andrew jackson', 'ANDREW JACKSON', 'Andrew jackson'],
