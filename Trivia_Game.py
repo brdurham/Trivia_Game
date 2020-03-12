@@ -271,11 +271,11 @@ class History(tk.Frame):
 
 if __name__ == "__main__":
 
-        data_file = open("game_lib.pickle", "rb")
+        #data_file = open("game_lib.pickle", "rb")
 
-        games = pickle.load(data_file)
+        #games = pickle.load(data_file)
 
-        data_file.close()
+        #data_file.close()
 
         root = tk.Tk()
 
